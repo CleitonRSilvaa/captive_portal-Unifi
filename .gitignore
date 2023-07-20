@@ -1,0 +1,10 @@
+# Ignorar pastas
+vendor/
+
+# Ignorar arquivos
+composer.json
+composer.lock
+composer.phar
+conexao.php
+config.php
+connecting.php
