@@ -81,8 +81,8 @@ $_SESSION["ap"] = $_GET["ap"];
     });
   </script>
 
-  <script src="../vendor/jquery-3.2.1.min.js"></script>
-  <script src="../vendor/jquery/jquery.mask.min.js"></script>
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery/jquery.mask.min.js"></script>
   <script src="../js/main.js"></script>
 
 
