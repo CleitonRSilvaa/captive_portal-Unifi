@@ -94,14 +94,14 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 $cpfBusca = str_replace(['.', '-'], '', $cpfBusca);
 
                 // Consulta SQL com filtro por CPF
-                $query = "SELECT * FROM portal_unifi.usuarios WHERE cpf = '$cpfBusca'";
+                $query = "SELECT * FROM usuarios WHERE cpf = '$cpfBusca'";
               } else {
                 // CPF inválido, exibe a tabela completa de usuários
-                $query = "SELECT * FROM portal_unifi.usuarios limit 0,50";
+                $query = "SELECT * FROM usuarios limit 0,50";
               }
             } else {
               // Campo de busca vazio, exibe a tabela completa de usuários
-              $query = "SELECT * FROM portal_unifi.usuarios limit 0,50";
+              $query = "SELECT * FROM usuarios limit 0,50";
             }
             $result = mysqli_query($conn, $query);
             if ($result->num_rows > 0) {
@@ -227,7 +227,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     unset($_SESSION["mensagem"]); // remove a mensagem de erro da variável de sessão
   }
   ?>
-  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery-3.2.1.min.js"></script>
   <script src="../js/jquery/jquery.mask.min.js"></script>
   <script src="../admin/js/main.js"></script>
 
