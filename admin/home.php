@@ -227,8 +227,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     unset($_SESSION["mensagem"]); // remove a mensagem de erro da variável de sessão
   }
   ?>
-  <script src="../vendor/jquery-3.2.1.min.js"></script>
-  <script src="../vendor/jquery/jquery.mask.min.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery/jquery.mask.min.js"></script>
   <script src="../admin/js/main.js"></script>
 
 </body>
